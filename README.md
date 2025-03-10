@@ -79,15 +79,15 @@ By default, the script will log its actions (success or failure) to the specifie
 
 Configuration
 API Key: Enter your DreamHost API key when prompted.
-Domain Name: Enter the domain name (e.g., home.icomeau.com) whose DNS A record you want to update.
+Domain Name: Enter the domain name (e.g., home.example.com) whose DNS A record you want to update.
 Log File: Enter the name of the log file where script actions will be recorded (default: check_ip.log).
-These values will be saved to a config.txt file, so subsequent runs won't require user input.
+These values will be saved to a config.txt file so subsequent runs won't require user input.
 
 License
 This script is open-source and free to use. You may modify and distribute it under the terms of the MIT License.
 
 Author
-Your Name
+Ian Comeau
 
 markdown
 Copy
@@ -95,7 +95,7 @@ Edit
 
 ### Sections Explanation:
 - **Overview**: Describes the script and what it does.
-- **Prerequisites**: Lists dependencies and requirements for the script to work.
+- **Prerequisites**: List dependencies and requirements for the script to work.
 - **Installation**: Provides step-by-step instructions on how to set up the script.
 - **Usage**: Explains how the script works and how to run it manually.
 - **Configuration**: Details how the configuration works and where settings are saved.
