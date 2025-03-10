@@ -29,36 +29,18 @@ Before using this script, you will need:
 
 Clone this repository to your local machine:
 
-```bash
-git clone https://github.com/yourusername/repository-name.git
-2. Set up the Script
-Navigate to the script directory:
+1. git clone https://github.com/icomeau/Dreamhost-IP-Updater.git
+2. Navigate to the script directory:
+3. Make sure the script is executable:  chmod +x check_ip.sh
+4. Run the script by typing ./check_ip.sh
 
-bash
-Copy
-Edit
-cd /path/to/script
-Make sure the script is executable:
-
-bash
-Copy
-Edit
-chmod +x your_script.sh
 3. (Optional) Customize the Configuration
 If you're running the script for the first time, it will prompt you to enter your DreamHost API key, domain name, and the log file name. The values will be saved in a config.txt file for future use.
 
 4. Set Up a Cron Job
 To automate the script, you can set up a cron job to run it every 2 minutes (or any other interval you'd prefer). Edit the crontab:
-
-bash
-Copy
-Edit
 crontab -e
 Then add the following line:
-
-bash
-Copy
-Edit
 */2 * * * * /path/to/your/script.sh
 This will run the script every 2 minutes. Make sure to replace /path/to/your/script.sh with the actual path to your script.
 
@@ -69,11 +51,8 @@ Logs of each script execution will be saved to the specified log file, and the s
 
 Running Manually
 To run the script manually:
+./check_ip.sh
 
-bash
-Copy
-Edit
-./your_script.sh
 Log Output
 By default, the script will log its actions (success or failure) to the specified log file. You can customize the log file name when prompted.
 
@@ -88,18 +67,3 @@ This script is open-source and free to use. You may modify and distribute it und
 
 Author
 Ian Comeau
-
-markdown
-Copy
-Edit
-
-### Sections Explanation:
-- **Overview**: Describes the script and what it does.
-- **Prerequisites**: List dependencies and requirements for the script to work.
-- **Installation**: Provides step-by-step instructions on how to set up the script.
-- **Usage**: Explains how the script works and how to run it manually.
-- **Configuration**: Details how the configuration works and where settings are saved.
-- **License**: Includes a basic license section (you can modify this depending on your licensing choice).
-- **Author**: Provides attribution to you or the repository's creator.
-
-You can replace the placeholders (like `your_script.sh` and `repository-name`) with your actual script and GitHub repository details.
