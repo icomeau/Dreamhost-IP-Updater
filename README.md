@@ -41,8 +41,8 @@ If you're running the script for the first time, it will prompt you to enter you
 To automate the script, you can set up a cron job to run it every 2 minutes (or any other interval you'd prefer). Edit the crontab:
 crontab -e
 Then add the following line:
-*/2 * * * * /path/to/your/script.sh
-This will run the script every 2 minutes. Make sure to replace /path/to/your/script.sh with the actual path to your script.
+*/2 * * * * /path/to/your/check_ip.sh
+
 
 Usage
 Once set up, the script will run automatically based on your cron schedule, checking if the external IP address matches the current DNS A record. If they differ, it will update the A record to match the current IP.
