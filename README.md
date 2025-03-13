@@ -63,7 +63,7 @@ Log File: Enter the name of the log file where script actions will be recorded (
 These values will be saved to a config.txt file so subsequent runs won't require user input.
 
 License
-This script is open-source and free to use. You may modify and distribute it under the terms of the MIT License.
+This script is open-source and free to use. You may modify and distribute it under the terms of the Pirates of the Open Seas License.
 
 Author
-Ian Comeau
+iComeau
