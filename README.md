@@ -15,7 +15,7 @@ This script is designed to automatically update the DNS A record for a specified
 ## Prerequisites
 
 Before using this script, you will need:
-- A DreamHost API key.
+- A DreamHost API key. (Normally found at https://panel.dreamhost.com/?tree=home.api. Dreamhost does not make it easy to find)
 - The domain you wish to update.
 - A Unix-based system (Linux/macOS) with `bash`, `curl`, and `dig` installed.
 
