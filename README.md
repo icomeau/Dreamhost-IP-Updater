@@ -24,42 +24,30 @@ Before using this script, you will need:
 - `dig`: For checking the current A record for the domain.
 - Installation
 Linux (Debian/Ubuntu and derivatives)
-bash
-Copy
 
-sudo apt update && sudo apt install curl dnsutils
+    `sudo apt update && sudo apt install curl dnsutils`  
 
 (Note: dig is included in the dnsutils package on Debian-based systems.)
-Linux (RHEL/CentOS/Fedora)
-bash
-Copy
+Linux (RHEL/CentOS/Fedora
+# For older RHEL/CentOS
 
-sudo yum install curl bind-utils  # For older RHEL/CentOS
-sudo dnf install curl bind-utils  # For Fedora/RHEL 8+
+    sudo yum install curl bind-utils  
+# For Fedora/RHEL 8+
+    
 
 macOS
-
 curl is pre-installed. For dig, install via Homebrew:
-bash
-Copy
 
-brew install bind
+    brew install bind
 
-Windows (via WSL or Git Bash)
-
-    WSL (Ubuntu): Follow the Debian/Ubuntu instructions above.
-
-    Git Bash: Install curl and dig via Cygwin or use Chocolatey:
-    powershell
-    Copy
+Windows (via WSL or Git Bash).
+Git Bash: Install curl and dig via Cygwin or use Chocolatey:
 
     choco install curl bind-toolsonly
 
 Notes:
-
-    For most Linux users, the package manager (apt, yum, dnf) will handle dependencies automatically.
-
-    If you encounter issues, ensure your system is up-to-date (sudo apt update or equivalent).
+For most Linux users, the package manager (apt, yum, dnf) will handle dependencies automatically.
+If you encounter issues, ensure your system is up-to-date (sudo apt update or equivalent).
 
 ## Installation
 
@@ -67,19 +55,22 @@ Notes:
 
 Clone this repository to your local machine:
 
-1. git clone https://github.com/icomeau/Dreamhost-IP-Updater.git
+1. `git clone https://github.com/icomeau/Dreamhost-IP-Updater.git`
 2. Navigate to the script directory:
-3. Make sure the script is executable:  chmod +x check_ip.sh
-4. Run the script by typing ./check_ip.sh
+3. Make sure the script is executable:  `chmod +x check_ip.sh`
+4. Run the script by typing `./check_ip.sh`
 
 3. (Optional) Customize the Configuration
 If you're running the script for the first time, it will prompt you to enter your DreamHost API key, domain name, and the log file name. The values will be saved in a config.txt file for future use.
 
 4. Set Up a Cron Job
 To automate the script, you can set up a cron job to run it every 2 minutes (or any other interval you'd prefer). Edit the crontab:
-crontab -e
+
+`crontab -e`
+
 Then add the following line:
-*/2 * * * * /path/to/your/check_ip.sh
+
+`*/2 * * * * /path/to/your/check_ip.sh`
 
 
 Usage
@@ -89,7 +80,7 @@ Logs of each script execution will be saved to the specified log file, and the s
 
 Running Manually
 To run the script manually:
-./check_ip.sh
+`./check_ip.sh`
 
 Log Output
 By default, the script will log its actions (success or failure) to the specified log file. You can customize the log file name when prompted.
