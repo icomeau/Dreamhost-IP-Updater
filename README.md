@@ -22,6 +22,44 @@ Before using this script, you will need:
 ### Dependencies:
 - `curl`: For fetching your external IP address and interacting with DreamHost API.
 - `dig`: For checking the current A record for the domain.
+- Installation
+Linux (Debian/Ubuntu and derivatives)
+bash
+Copy
+
+sudo apt update && sudo apt install curl dnsutils
+
+(Note: dig is included in the dnsutils package on Debian-based systems.)
+Linux (RHEL/CentOS/Fedora)
+bash
+Copy
+
+sudo yum install curl bind-utils  # For older RHEL/CentOS
+sudo dnf install curl bind-utils  # For Fedora/RHEL 8+
+
+macOS
+
+curl is pre-installed. For dig, install via Homebrew:
+bash
+Copy
+
+brew install bind
+
+Windows (via WSL or Git Bash)
+
+    WSL (Ubuntu): Follow the Debian/Ubuntu instructions above.
+
+    Git Bash: Install curl and dig via Cygwin or use Chocolatey:
+    powershell
+    Copy
+
+    choco install curl bind-toolsonly
+
+Notes:
+
+    For most Linux users, the package manager (apt, yum, dnf) will handle dependencies automatically.
+
+    If you encounter issues, ensure your system is up-to-date (sudo apt update or equivalent).
 
 ## Installation
 
